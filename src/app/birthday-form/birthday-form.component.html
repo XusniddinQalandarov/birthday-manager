@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Colleagues’ Birthdays</h1>
+  <form [formGroup]="form" (ngSubmit)="save()">
+    <table>
+      <tr *ngFor="let row of colleagues.controls; let i = index" [formGroupName]="i">
+        <td><input formControlName="name" placeholder="Name" /></td>
+        <td><input formControlName="surname" placeholder="Surname" /></td>
+        <td><input type="date" formControlName="birthdate" /></td>
+      </tr>
+    </table>
+    <button type="button" (click)="addRow()">+ Add</button>
+    <button type="submit">Save</button>
+  </form>
+</div>
