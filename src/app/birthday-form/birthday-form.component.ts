@@ -33,7 +33,6 @@ export class BirthdayFormComponent implements OnInit {
         res.record.forEach((c) => this.addRow(c));
       },
       (_) => {
-        // if empty or first run
         this.addRow();
       }
     );
