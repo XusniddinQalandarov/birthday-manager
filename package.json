@@ -6,7 +6,10 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "vercel:login": "vercel login",
+    "vercel:link":  "vercel link",
+    "vercel:deploy":"vercel --prod"
   },
   "private": true,
   "dependencies": {
